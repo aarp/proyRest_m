@@ -10,27 +10,32 @@
 <body> 
 
 <!-- HOME PAGE -->
-<div data-role="page" id="home">
-<div data-role="header">
-  <h1>Que Hay</h1>
-</div>
+<div data-role="page" id="home" data-theme="a">
 
 <div data-role="content"> 
-  <p>Contenido ... home</p>
-  <a href="#rest" data-role="button" data-theme="b">Restaurantes</a>
-  <a href="#tipocom" data-role="button" data-theme="b">Tipo de Comida</a>
-  <a href="#oferta" data-role="button" data-theme="b">Ofertas</a>
+  <img src="/images/mac.jpeg" height="50"/>
+  <a href="#rest" data-role="button" >Restaurantes</a>
+  <a href="#tipocom" data-role="button">Tipo de Comida</a>
+  <a href="#oferta" data-role="button">Ofertas</a>
 </div>
 
 <div data-role="footer">
-  <h4>De Comer</h4>
+
+  <a href="#home" data-role="button" data-icon="info">info</a>
 </div>
 </div>
 
 <!-- RESTAURANTES -->
-<div data-role="page" id="rest">
+<div data-role="page" id="rest" data-theme="a">
+<!---menu en todos lados -->
+
 <div data-role="content">
-  <ul data-role="listview" data-inset="true" data-filter="true" data-theme="b" data-split-icon="grid">
+<div class="ui-grid-b">
+  <div class="ui-block-a"><a href="home" data-role="button" data-icon="home">Res</a></div>
+  <div class="ui-block-b"><a href="home" data-role="button" data-icon="minus">Tip</a></div>
+  <div class="ui-block-c"><a href="home" data-role="button" data-icon="arrow-d">Ofe</a></div>
+</div>
+  <ul data-role="listview" data-inset="true" data-split-icon="grid">
     <li>
       <img src="/images/mac.jpeg" class="ui-li-icon" /><center><a href="#inforest">McDonald's</a></center>
       <a href="#menu">google.com</a>
@@ -48,30 +53,46 @@
       <a href="#menu">google.com</a>
     </li>
 </div>
+
+<div data-role="footer">
+  <a href="#home" data-role="button" data-icon="arrow-l">Atras</a>
+  <a href="#home" data-role="button" data-icon="arrow-u">H</a>
+</div>
+
 </div>
 
 <!-- TIPO DE COMIDA -->
-<div data-role="page" id="tipocom">
+<div data-role="page" id="tipocom" data-theme="a">
 <div data-role="content">
-  <h1>TIPO DE COMIDA</h1>
-  <p>Contenido ... tipo de comida</p>
-  <h2>  @menu.comida_id</h2>
-  
-
+<div data-role="fieldcontain">
+  <label for="tipo">Tipo de Comida:</label>
+   <select name="tipo" id="tipo">
+    <option value="uno">Italiana</option>
+    <option value="dos">Rapida</option>
+    <option value="tres">Francesa</option>
+   </select>
+</div>
+<p> #tipo </p>
 </div>
 </div> 
 
+<!-- OFERTAS -->
+<div data-role="#page" id="oferta" data-theme="b">
+<div data-role="content">
+  <h5>Aca se usara grids para poner las ofertas, posiblemente de forma estatica ;)</h5>
+</div>
 
+</div>
 
 <!-- INFORMACION DE RESTAURANTES -->
-<div data-role="page" id="inforest">
+<div data-role="page" id="inforest" data-theme="a">
 <div data-role="content">
   <p>aca va la info de un restaurante especificamente</p>
 </div>
 </div>
 
 <!-- MENU DE RESTAURANTES -->
-<div data-role="page" id="menu">
+<div data-role="page" id="menu" data-theme="a">
 <div data-role="content">
   <h1>Contenido ... menu</h1>
   <p>aca va el menu de un restaurante especificamente</p>
