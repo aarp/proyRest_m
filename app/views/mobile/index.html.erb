@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+  <title>QueHayDeComer.com</title> 
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js"></script>
+</head> 
+
+<body> 
+
+<!-- HOME PAGE -->
+<div data-role="page" id="home">
+<div data-role="header">
+  <h1>Que Hay</h1>
+</div>
+
+<div data-role="content"> 
+  <p>Contenido ... home</p>
+  <a href="#rest" data-role="button" data-theme="b">Restaurantes</a>
+  <a href="#tipocom" data-role="button" data-theme="b">Tipo de Comida</a>
+  <a href="#oferta" data-role="button" data-theme="b">Ofertas</a>
+</div>
+
+<div data-role="footer">
+  <h4>De Comer</h4>
+</div>
+</div>
+
+<!-- RESTAURANTES -->
+<div data-role="page" id="rest">
+<div data-role="content">
+  <ul data-role="listview" data-inset="true" data-filter="true" data-theme="b" data-split-icon="grid">
+    <li>
+      <img src="/images/mac.jpeg" class="ui-li-icon" /><center><a href="#inforest">McDonald's</a></center>
+      <a href="#menu">google.com</a>
+    </li>
+    <li>
+      <img src="/images/pollo.jpeg" class="ui-li-icon" /><center><a href="#inforest">Pollo Campero</a></center>
+      <a href="#menu">google.com</a>
+    </li>
+    <li>
+      <img src="/images/bk.jpeg" class="ui-li-icon" /><center><a href="#inforest">Burguer King</a></center>
+      <a href="#menu">google.com</a>
+    </li>
+    <li>
+      <img src="/images/wendy.jpeg" class="ui-li-icon" /><center><a href="#inforest">Wendy's</a></center>
+      <a href="#menu">google.com</a>
+    </li>
+</div>
+</div>
+
+<!-- INFORMACION DE RESTAURANTES -->
+<div data-role="page" id="inforest">
+<div data-role="content">
+  <p>aca va la info de un restaurante especificamente</p>
+</div>
+</div>
+
+<!-- MENU DE RESTAURANTES -->
+<div data-role="page" id="menu">
+<div data-role="content">
+  <h1>Contenido ... menu</h1>
+  <p>aca va el menu de un restaurante especificamente</p>
+</div>
+</div>
+
+
+</body>
+</html>
